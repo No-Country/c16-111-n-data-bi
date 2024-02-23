@@ -8,5 +8,20 @@ Yahoo Finance: Traernos BTC, ETH, Nasdaq, SP500 y GOLD y analizar la relación e
 Nos conectaremos mediante Python a la API de Yahoo Finance para obtener los 5 activos mencionados, crearemos un entorno de AWS con los servicios requeridos, y como destino lo llevaremos a una pequeña base de datos SQL dentro de AWS 
 Luego visualizaremos en Power BI donde podremos realizar un Análisis de los datos tomados, evaluando relaciones y analizando la evolución de los precios de cada activo.
 Nos planteamos evaluar la relación en el lapso de los últimos 10 años de estos 5 activos.
-Nuestro MVP contendrá esta arquitectura:
+
+## Integrantes:
+• Preciado Sebastián
+• Emiliano Flores
+• Diego Bouzada
+
+## Tecnologías
+AWS Lambda
+Power BI
+
+Objetivos: 
+•	Realizar un ETL completo utilizando un proveedor de Cloud. 
+•	Visualizar en Power BI los resultados mas importantes del análisis
+Hipótesis:
+•	Los movimientos de las criptomonedas tienen relación con los índices más importantes del mercado mundial
+
 
