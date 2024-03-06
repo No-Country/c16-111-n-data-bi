@@ -24,4 +24,10 @@ Objetivos:
 Hipótesis:
 •	Los movimientos de las criptomonedas tienen relación con los índices más importantes del mercado mundial
 
+------------------------------------------------------
+
+## Proceso de Ingenieria
+## Base de Datos
+## Power BI
+
 
