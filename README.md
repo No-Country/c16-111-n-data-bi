@@ -36,8 +36,11 @@ En nuestro proyecto, el servicio de AWS Secret Manager desempeña un papel esenc
 Hemos desplegado nuestra base de datos en Railway, un servicio en la nube que nos proporciona herramientas gratuitas para crear y desplegar nuestras bases de datos mediante variables de conexión que el mismo servicio nos proporciona. Dentro de él, podemos visualizar tablas, ejecutar queries, etc. Las variables que proporciona este servicio son:
 
 • Nombre de la base de datos
+
 • Host
+
 • Contraseña
+
 • Usuario
 
 Además, hemos explorado las capacidades de Railway, las cuales nos sorprenden al ser un servicio gratuito. Railway sirve para automatizar tareas de mantenimiento, como la gestión de índices y la optimización de consultas, mejorando así la eficiencia operativa.
