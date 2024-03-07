@@ -26,8 +26,23 @@ Hipótesis:
 
 ------------------------------------------------------
 
-## Proceso de Ingenieria
+## Proceso de Ingenieri
 ## Base de Datos
+
+Hemos creado con éxito una base de datos en MySQL para nuestro proyecto, estableciendo la tabla "Moneda" con los campos fundamentales: fecha, cotización, volumen y moneda, esenciales para nuestras operaciones y análisis.
+
+En nuestro proyecto, el servicio de AWS Secret Manager desempeña un papel esencial. Durante el proceso de despliegue, Secret Manager administra de manera segura las credenciales necesarias para establecer la conexión con la base de datos MySQL. Estas credenciales son cruciales para garantizar una conexión segura y facilitar operaciones de lectura y escritura en la base de datos.
+
+Hemos desplegado nuestra base de datos en Railway, un servicio en la nube que nos proporciona herramientas gratuitas para crear y desplegar nuestras bases de datos mediante variables de conexión que el mismo servicio nos proporciona. Dentro de él, podemos visualizar tablas, ejecutar queries, etc. Las variables que proporciona este servicio son:
+
+• Nombre de la base de datos
+• Host
+• Contraseña
+• Usuario
+
+Además, hemos explorado las capacidades de Railway, las cuales nos sorprenden al ser un servicio gratuito. Railway sirve para automatizar tareas de mantenimiento, como la gestión de índices y la optimización de consultas, mejorando así la eficiencia operativa.
+
+Todo esto se traduce en una infraestructura escalable y eficiente. Este despliegue no solo asegura la disponibilidad de nuestros datos en MySQL, sino que también permite a la aplicación acceder de manera segura a los servicios de S3 y MySQL. Además, ayuda a alimentar nuestra herramienta de visualización, en este caso, Power BI, contribuyendo así a la protección integral de nuestros recursos.
 _________________________________
 
 ## Power BI
