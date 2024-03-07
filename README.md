@@ -39,11 +39,17 @@ De esta manera nos quedamos con una tabla de hechos y dos de dimensiones.
 
 Una vez finalizado este proceso, comenzamos a realizar todas las medidas en DAX que nos permiten realizar visualizar nuestro lo que nos propusimos mostrar en nuestro Dashboard.
 Este es el listado de Medidas:
+
 •	[Max Bitcoin] = CALCULATE(MAX(Fact_Cotizaciones[Cotizacion]), Dim_Monedas[IdMoneda] = 1)
+
 •	[Max Ethereum] = CALCULATE(MAX(Fact_Cotizaciones[Cotizacion]), Dim_Monedas[IdMoneda] = 2)
+
 •	'Medidas'[Max S&P500] = CALCULATE(MAX(Fact_Cotizaciones[Cotizacion]), Dim_Monedas[IdMoneda] = 3)
+
 •	'Medidas'[Max Nasdaq] = CALCULATE(MAX(Fact_Cotizaciones[Cotizacion]), Dim_Monedas[IdMoneda] = 4)
+
 •	'Medidas'[Max Gold] = CALCULATE(MAX(Fact_Cotizaciones[Cotizacion]), Dim_Monedas[IdMoneda] = 5)
+
 •	[Fecha_Max_Volumen] = CALCULATE (
 MAX ( Dim_Calendario[Date] ),
 FILTER ( Fact_Cotizaciones, Fact_Cotizaciones[volumen] = MAX ( Fact_Cotizaciones[volumen]) )
@@ -63,16 +69,22 @@ o	)
 )
 
 •	[Total Volumen] = SUM(Fact_Cotizaciones[volumen])
+
 •	[Min Bitcoin] = CALCULATE(MIN(Fact_Cotizaciones[Cotizacion]), Dim_Monedas[IdMoneda] = 1)
+
 •	[Min Ethereum] = CALCULATE(MIN(Fact_Cotizaciones[Cotizacion]), Dim_Monedas[IdMoneda] = 2)
+
 •	[Min Gold] = CALCULATE(MIN(Fact_Cotizaciones[Cotizacion]), Dim_Monedas[IdMoneda] = 5)
+
 •	[Min Nasdaq] = CALCULATE(MIN(Fact_Cotizaciones[Cotizacion]), Dim_Monedas[IdMoneda] = 4)
+
 •	[Min S&P500] = CALCULATE(min(Fact_Cotizaciones[Cotizacion]), Dim_Monedas[IdMoneda] = 3)
 
 El tablero cuenta con tres pestañas:
 •	Resumen
 •	Evoluciones temporales
 •	Volumen y Composición.
+
 A través del mismo buscamos analizar como ha evolucionado el mercado de activos financieros con la fuerte irrupción de las criptomonedas. Detectar que días son los que mas se opera, que porcentaje de volumen de compra ocupa cada activo, y en estos últimos 10 años, que porcentaje evolutivo ha ocupado cada uno y su importancia.
 
 El tablero se realiza en Power BI Desktop, una vez realizado publicamos el mismo en la Nube de Power BI (app.powerbi.com), creamos una cuenta free de prueba que nos otorga la posibilidad de usar las funcionalidades por 60 días, y programamos diariamente una actualización del tablero para las 21:00 hs.
