@@ -1,4 +1,4 @@
-# MVP – NO COUNTRY
+# MVP – Panel Financiero: Visualizando tus activos
 Repositorio del Equipo c16-111-n-data-bi
 
 
@@ -17,16 +17,20 @@ Nos planteamos evaluar la relación en el lapso de los últimos 10 años de esto
 ## Tecnologías
 AWS Lambda
 Power BI
+MY SQL
+Railway
+Jira
 
-Objetivos: 
+## Objetivos: 
 •	Realizar un ETL completo utilizando un proveedor de Cloud. 
 •	Visualizar en Power BI los resultados mas importantes del análisis
-Hipótesis:
+
+## Hipótesis:
 •	Los movimientos de las criptomonedas tienen relación con los índices más importantes del mercado mundial
 
 ------------------------------------------------------
 
-## Proceso de Ingenieri
+## Proceso de Ingenieria
 ## Base de Datos
 
 Hemos creado con éxito una base de datos en MySQL para nuestro proyecto, estableciendo la tabla "Moneda" con los campos fundamentales: fecha, cotización, volumen y moneda, esenciales para nuestras operaciones y análisis.
@@ -107,4 +111,6 @@ A través del mismo buscamos analizar como ha evolucionado el mercado de activos
 
 El tablero se realiza en Power BI Desktop, una vez realizado publicamos el mismo en la Nube de Power BI (app.powerbi.com), creamos una cuenta free de prueba que nos otorga la posibilidad de usar las funcionalidades por 60 días, y programamos diariamente una actualización del tablero para las 21:00 hs.
 
+## Conclusiones
 
+Hemos conformado un gran equipo y pudimos sortear diversos inconvenientes a lo largo de las 4 semanas del proyecto. Nos encontramos con no poder desplegar base de datos SQL en los proveedores que teníamos inicialmente pensado desplegar (GCP, AWS) por ser de pago. De esta manera dimos con Railway luego de una potente investigación y pudimos desplegar la BD de MYSQL en esta plataforma gratuita en la nube. Luego con la carga incremental de datos, que la implementamos mediante AWS Lambda, tambien hicimos un gran trabajo de investigación para poder implementarla.
