@@ -21,6 +21,9 @@ MY SQL
 Railway
 Jira
 
+## Video resumen del trabajo: 
+https://youtu.be/nJgQYgQEMeo?si=7vJj_UPVX2Qjm5P2
+
 ## Objetivos: 
 •	Realizar un ETL completo utilizando un proveedor de Cloud. 
 •	Visualizar en Power BI los resultados mas importantes del análisis
